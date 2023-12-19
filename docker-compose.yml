@@ -1,0 +1,33 @@
+version: '3'
+services:
+  app:
+    # Build the Docker image using the Dockerfile in the current directory
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # Map the port on the host to the port on the container
+    ports:
+      - "3000:3000"
+    # Set environment variables for Nest.js app
+    environment:
+      NODE_ENV: production
+      POSTGRES_HOST: 'db'
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'admin'
+      POSTGRES_DB: 'lesson'
+    # Optionally, mount volumes if needed
+    volumes:
+      - .:/app
+
+  db:
+    # Use the official PostgreSQL image
+    image: postgres:latest
+    # Set environment variables for PostgreSQL
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'admin'
+      POSTGRES_DB: 'lesson'
+    # Optionally, expose PostgreSQL port if needed
+    ports:
+      - "5432:5432"
