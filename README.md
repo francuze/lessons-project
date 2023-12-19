@@ -22,4 +22,6 @@ docker-compose up
 ![image](https://github.com/francuze/lessons-project/assets/49876179/adb7f961-37f0-4f81-b1f0-0503b6926676)
 ![image](https://github.com/francuze/lessons-project/assets/49876179/4790a5c9-49fb-449a-9aa0-e448ea80d8bc)
 ![image](https://github.com/francuze/lessons-project/assets/49876179/52b296b2-3a2f-4b5f-9e3d-dc06de3a658d)
+![image](https://github.com/francuze/lessons-project/assets/49876179/fddd10aa-0d48-40da-afe3-402274af042f)
+
 
